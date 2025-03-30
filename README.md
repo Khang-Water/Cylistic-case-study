@@ -95,7 +95,7 @@ Again, you can find the datasets I used and the full notebook [here](https://www
    - **Birth Year**: Fill missing values using the median based on user type and quarter.  
 
 4. **Add New Columns**  
-   - **Age**: Calculate by subtracting birth year from 2019.  
+   - **Age**: Calculate by subtracting birth year from 20202020.  
    - **day_of_week**: Extract from **start_time** to show the day of the week (1=sunday, 7=saturday).  
    - **Age Group**: Categorize users into age groups.  
 
