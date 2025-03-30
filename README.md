@@ -158,7 +158,7 @@ Again, you can find the datasets I used and the full notebook [here](https://www
   
 
 ## Share & Act
-I used Tableau to recreate graphs and made a short representation [here].(https://docs.google.com/presentation/d/1I0eYG8BllsmwhvomrTvpzf6fqF0H2Pew/edit#slide=id.p1)
+I used Tableau to recreate graphs and made a short representation [here](https://docs.google.com/presentation/d/1I0eYG8BllsmwhvomrTvpzf6fqF0H2Pew/edit#slide=id.p1)
 
 ### Recommendations 
 
