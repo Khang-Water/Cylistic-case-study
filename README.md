@@ -153,7 +153,7 @@ Again, you can find the datasets I used and the full notebook [here](https://www
 | **Ride Count**          | Fewer trips compared to subscribers               | Significantly more trips in every quarter        |
 | **Weekday vs. Weekend**  | Ride **more on weekends** for leisure/exercise    | Ride **mostly on weekdays** for commuting        |
 | **Trip Duration Pattern** | **Longer trips throughout the week** (exercise)  | **Shorter trips on weekends**                     |
-| **Gender Distribution**  | Higher female proportion                         | **7% fewer female riders** than customers       |
+| **Gender Distribution**  | Higher male proportion                         | **7% fewer female riders** than customers       |
 | **Age Distribution**     | **81% are 26-35 years old**                        | **50.5% are 26-35 years old**, more 36+ subscribers |
   
 
