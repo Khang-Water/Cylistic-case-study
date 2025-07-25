@@ -84,7 +84,7 @@ All 4 quarterly datasets consists of **3,818,004 rows** and covers trips recorde
 - **birthyear**: User's birth year (if available)
 
 ## Data Cleaning Process  
-Again, you can findfind the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
+Again, you can find the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
 
 1. **Rename Columns** – Make column names consistent across all datasets.  
 
