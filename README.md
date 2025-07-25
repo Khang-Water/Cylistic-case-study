@@ -84,7 +84,7 @@ All 4 quarterly datasets consists of **3,818,004 rows** and covers trips recorde
 - **birthyear**: User's birth year (if available)
 
 ## Data Cleaning Process  
-Again, you can find the datasets I used and the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
+Again, you can findfind the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
 
 1. **Rename Columns** – Make column names consistent across all datasets.  
 
@@ -206,7 +206,7 @@ This analysis highlights distinct usage patterns between annual members and casu
   
 
 ## Share & Act
-I used Tableau to recreate graphs and you can view it [here](https://public.tableau.com/views/CyclisticDashboard_17533905637030/Home?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+I used Tableau to recreate graphs and you can view it [here](https://public.tableau.com/views/CyclisticDashboard_17533905637030/Home?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) or the [PDF](https://github.com/Khang-Water/Cylistic-case-study/blob/main/Cyclistic%20Dashboard.pdf) version
 
 <img width="1442" height="1170" alt="image" src="https://github.com/user-attachments/assets/02f54a14-e46c-464e-a307-173fe257c9dd" />
 <img width="1439" height="1155" alt="image" src="https://github.com/user-attachments/assets/a689a101-5cf2-4044-adbb-135cdce9debb" />
