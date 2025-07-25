@@ -63,7 +63,7 @@ Are there issues with bias or credibility in this data? Does your data ROCCC?
 
 ## Exploratory Analysis  
 
-You can find the datasets I used and the full notebook [here](https://www.kaggle.com/code/khanglminhh/cyclistic-case-study).  
+You can find the datasets I used and the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
 
 For this analysis, I used Python to explore the data.  
 
@@ -84,7 +84,7 @@ All 4 quarterly datasets consists of **3,818,004 rows** and covers trips recorde
 - **birthyear**: User's birth year (if available)
 
 ## Data Cleaning Process  
-Again, you can find the datasets I used and the full notebook [here](https://www.kaggle.com/code/khanglminhh/cyclistic-case-study).  
+Again, you can find the datasets I used and the full notebook [here](https://colab.research.google.com/drive/1JKzRUx4oiitu7CzhLbvKFuf2B2G4EDA9?usp=sharing).  
 
 1. **Rename Columns** – Make column names consistent across all datasets.  
 
