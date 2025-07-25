@@ -101,87 +101,130 @@ Again, you can find the datasets I used and the full notebook [here](https://www
 
 5. **Merge Data** – Combine all four quarterly datasets into one.  
 
-## Analyze  
+## Analyze
 
-### **Trip Duration & Ride Count by Usertype (Quarterly)**  
-- **Graph 1**: Total trip duration by user type per quarter.
-![image](https://github.com/user-attachments/assets/f4a4113a-2cd6-4018-a8ae-f8328294ac96)
+In this section, we analyze how annual members (subscribers) and casual riders (customers) use the bike-share service differently. By examining quarterly trends, station usage patterns, demographic distributions, and key differences, we aim to provide actionable insights for designing targeted marketing strategies.
 
-- **Graph 2**: Total ride count by user type per quarter.
-![image](https://github.com/user-attachments/assets/b818f83b-8d04-4343-9d35-3cd8f472a2c1)
+### Quarterly Trends in Trip Duration and Ride Count
+
+To understand usage patterns, we first explored trip duration and ride frequency on a quarterly basis.
+
+- **Graph 1: Average Trip Duration per Ride per Quarter**
+<img width="1037" height="565" alt="image" src="https://github.com/user-attachments/assets/5d6d35cb-0270-4738-a6c6-2ef79037e03e" />
+  Customers consistently exhibit higher average trip durations than subscribers across all four quarters.
+
+- **Graph 2: Total Ride Count by User Type per Quarter**
+<img width="748" height="557" alt="image" src="https://github.com/user-attachments/assets/29be51ef-1f4d-4091-a6dd-0f84ca25a3e8" />
+
+  Both customers and subscribers follow similar seasonal trends, with ride counts peaking in Q2 and Q3 and declining in Q1 and Q4.
+
+- **Graph 3: Total Trip Duration by User Type per Quarter**
+<img width="748" height="555" alt="image" src="https://github.com/user-attachments/assets/344c33ac-01b4-4a79-9d2b-4fda5852b260" />
+
+  Total trip duration mirrors ride count trends, with significant increases in Q2 and Q3 for both user types.
+
+**Key Insights:**  
+- Customers take longer trips on average, suggesting they may use bikes for leisure or tourism rather than routine travel.  
+- Both user types ride more frequently during warmer months, indicating a seasonal influence on bike usage.
+
+To investigate the role of weather, we analyzed the correlation between temperature and ride frequency using data from [Visual Crossing](https://www.visualcrossing.com/).
+<img width="712" height="531" alt="image" src="https://github.com/user-attachments/assets/9b943710-197b-4088-a364-b84043877412" />
+
+- **Correlation Finding:** A strong positive correlation (0.880) exists between daily average temperature and total rides.  
+- **Impact:** For every 1°C increase in temperature, daily rides increase by approximately 495.  
+
+This confirms that warmer weather significantly boosts bike usage for both customers and subscribers, with Q2 and Q3 aligning with Chicago’s warmer seasons and peak tourism periods.
+
+### Station Usage Patterns
+
+We analyzed station data to identify where and when customers and subscribers ride, focusing on stations with the highest and lowest customer usage.
+
+- **Top Customer Stations:**  
+  - **Graph 4: Total Rides by User Type by Weekday at Millennium Park**
+<img width="1472" height="1064" alt="image" src="https://github.com/user-attachments/assets/1bb0215b-0ba0-454b-98b1-832774c92e1e" />
  
+  - **Graph 5: Total Rides by User Type by Weekday at Lake Shore Dr & Monroe St**  
+<img width="1493" height="1061" alt="image" src="https://github.com/user-attachments/assets/e01b6546-9d0d-4239-b2a3-415cdeee2234" />
 
-**Analysis:**  
-- Customers generally had equal or longer trip durations than subscribers. In **Q3**, customer trip duration was significantly higher.  
-- Subscribers took far more trips than customers in every quarter.  
-- **Possible Explanation:**  
-  - **Subscribers**: Likely use bikes for commuting, leading to frequent but shorter trips.  
-  - **Customers**: More likely use bikes for leisure or exercise, resulting in longer trips but fewer in number.  
+- **Bottom Customer Stations:**  
+  - **Graph 6: Total Rides by User Type by Weekday at Wells St & 19th St**
+<img width="1472" height="1071" alt="image" src="https://github.com/user-attachments/assets/cb661ab1-0ad5-4442-b116-0bdcd55efa56" />
+  
+  - **Graph 7: Total Rides by User Type by Weekday at Blue Island Ave & 18th St**  
+<img width="1460" height="1072" alt="image" src="https://github.com/user-attachments/assets/7f9c07a0-6581-42a6-9d71-c6b6ce556117" />
 
-### **Trip Duration & Ride Count by Usertype (Weekdays vs. Weekends)**
-- **Graph 3**: Total ride count per weekday (Customer vs. Subscriber).
-![image](https://github.com/user-attachments/assets/2d7937ba-a09c-41e0-aa1f-c447b86886d3)
+**Key Insights:**  
+- Across all stations, ride frequency rises in summer and fall (Q2 and Q3).  
+- Customers show a clear spike in rides on weekends, particularly at popular stations like Millennium Park and Lake Shore Dr & Monroe St, which are tourist hotspots.  
+- Subscribers maintain more consistent ride patterns throughout the week, with higher usage at stations likely tied to commuting routes (e.g., Wells St & 19th St).  
 
-- **Graph 4**: Total trip duration per weekday (Customer vs. Subscriber).
-![image](https://github.com/user-attachments/assets/df4706e5-9819-4e77-8e2b-ac4f82a59c55)
+This suggests that customers primarily use bikes for recreational or tourist activities, especially on weekends, while subscribers rely on them for regular, weekday travel, such as commuting.
 
-**Analysis:**  
-- Subscribers ride more from **Monday to Friday** but drop significantly on weekends, indicating primary use for commuting.  
-- Customers ride more on **weekends**, suggesting they use bikes mainly for leisure or exercise.  
-- Subscribers have **shorter weekend trip durations**, while customers maintain **longer durations throughout the week**, supporting the idea that they use bikes for exercise.  
+### Demographic Analysis
 
-### **Gender Distribution by Usertype**  
-- **Graph 5**: Pie charts showing gender distribution for subscribers and customers.  
-![image](https://github.com/user-attachments/assets/6017c369-5fef-4155-bb9d-9595f4b6e53a)
+We examined gender and age distributions to uncover demographic differences between customers and subscribers.
 
-**Analysis:**  
-- The proportion of **female subscribers** is **7% lower** than that of female customers.  
+#### Gender Distribution
+- **Graph 8: Pie Charts Showing Gender Distribution for Subscribers and Customers**  
+<img width="1294" height="633" alt="image" src="https://github.com/user-attachments/assets/d550e293-389b-453b-b7fc-2430d9cd8d7a" />
 
-### **Age Distribution of Riders**  
-- **Graph 6**: Pie chart showing age distribution of customers and subscribers.
-![image](https://github.com/user-attachments/assets/ce4673fe-48cb-4caa-a9e7-644b8fea9e0c)
 
-**Analysis:**  
-- The **26-35 age group** has the most subscribers. However, **81% of customers** fall into this category, compared to only **50.5% of subscribers**.  
-- Riders aged **36+** are more likely to subscribe than be customers.
+**Key Insights:**  
+- The proportion of female subscribers is 7% lower than that of female customers.  
+- This indicates that women are less likely to opt for annual memberships, possibly due to differing usage preferences or limited marketing appeal.
 
-### **Comparison of Customers vs. Subscribers**  
+#### Age Distribution
+- **Graph 9: Pie Chart Showing Age Distribution of Customers and Subscribers**  
+<img width="1306" height="497" alt="image" src="https://github.com/user-attachments/assets/d9eb311e-ffc0-4400-8ebe-740b6a61d608" />
+
+**Key Insights:**  
+- The 26-35 age group dominates both user types, but it’s more pronounced among customers (81%) compared to subscribers (50.5%).  
+- Riders aged 36 and older are more likely to be subscribers than customers.  
+
+Younger riders (26-35) appear more inclined to use bikes casually, while older riders (36+) prefer subscriptions, possibly reflecting more established commuting habits.
+
+### Comparison of Customers vs. Subscribers
+
+The table below summarizes the key differences between customers and subscribers based on the analysis:
 
 | **Category**             | **Customers**                                      | **Subscribers**                                      |
 |--------------------------|---------------------------------------------------|----------------------------------------------------|
-| **Trip Duration**        | Longer trips, especially in **Q3**                | Shorter trips overall                              |
-| **Ride Count**          | Fewer trips compared to subscribers               | Significantly more trips in every quarter        |
-| **Weekday vs. Weekend**  | Ride **more on weekends** for leisure/exercise    | Ride **mostly on weekdays** for commuting        |
-| **Trip Duration Pattern** | **Longer trips throughout the week** (exercise)  | **Shorter trips on weekends**                     |
-| **Gender Distribution**  | Low female proportion (24.9%)                         | **7% fewer female riders** than customers       |
-| **Age Distribution**     | **81% are 26-35 years old**                        | **50.5% are 26-35 years old**, more 36+ subscribers |
+| **Trip Duration**        | Longer average trip durations                     | Shorter average trip durations                     |
+| **Ride Frequency**       | More rides on weekends                            | Consistent rides throughout the week               |
+| **Seasonal Usage**       | Peaks in Q2 and Q3                                | Peaks in Q2 and Q3                                 |
+| **Station Usage**        | High usage at tourist-heavy stations (e.g., Millennium Park) | High usage at commuting-related stations (e.g., Wells St & 19th St) |
+| **Gender Distribution**  | Higher proportion of females                      | Lower proportion of females                        |
+| **Age Distribution**     | Predominantly 26-35 years old (81%)               | More evenly distributed, higher proportion of 36+ years old (50.5% in 26-35 group) |
+
+**Key Insights:**  
+- **Customers** are more likely to use Cyclistic bikes for leisure or tourism, as evidenced by longer trips, weekend spikes, and activity at tourist-friendly stations.  
+- **Subscribers** demonstrate a pattern of regular, utilitarian use, with shorter, more frequent trips throughout the week and a broader age range, suggesting commuting or daily travel needs.  
+
+### Conclusion
+
+This analysis highlights distinct usage patterns between annual members and casual riders. Customers lean toward recreational use, influenced by weather and weekend availability, while subscribers exhibit consistent, practical usage tied to routines like commuting. These insights provide a foundation for crafting marketing strategies to convert casual riders into annual members by addressing their specific needs and preferences.
   
 
 ## Share & Act
-I used Tableau to recreate graphs and made a short representation [here](https://docs.google.com/presentation/d/1I0eYG8BllsmwhvomrTvpzf6fqF0H2Pew/edit#slide=id.p1)
+I used Tableau to recreate graphs and you can view it [here](https://public.tableau.com/views/CyclisticDashboard_17533905637030/Home?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+<img width="1442" height="1170" alt="image" src="https://github.com/user-attachments/assets/02f54a14-e46c-464e-a307-173fe257c9dd" />
+<img width="1439" height="1155" alt="image" src="https://github.com/user-attachments/assets/a689a101-5cf2-4044-adbb-135cdce9debb" />
+<img width="1436" height="1170" alt="image" src="https://github.com/user-attachments/assets/a9c2a0ae-7d03-4928-847e-06f16426d2ec" />
 
 ### Recommendations 
 
-#### Annual Plan for Weekday Commuters  
-- A yearly subscription for those who bike to work or school five days a week. This makes commuting easier and more affordable, attracting more workers.  
+#### 1. Annual Plan for Weekday Commuters: Annual subscription with unlimited weekday rides for commuters
+- **Problem Solved**: Subscribers ride more on weekdays, indicating commuting patterns. This plan encourages casual riders who commute to switch from single-ride or day passes to annual memberships
 
-- **Problem Solved:** Most subscribers ride more on weekdays than weekends. This plan encourages regular commuters to commit to a subscription instead of relying on single rides.  
+#### 2. Annual Plan for Summer & Autumn Only: Seasonal subscription for Q2 and Q3, priced lower than full-year plans.
+- **Problem Solved**: Targets casual riders active in warmer months (Q2, Q3), with a 0.880 temperature-ride correlation.
 
-#### Annual Plan for Regular Exercisers  
-- A special plan for frequent riders who use bikes for exercise.  
+#### 3. Plan Only for Weekends: Unlimited weekend rides with discounts for longer trips.
+- **Problem Solved**: Casual riders predominantly use bikes on weekends at tourist-heavy stations like Millennium Park. This plan targets their recreational habits, making membership more attractive without a full-week commitment.
 
-- **Problem Solved:** Many customers ride for exercise but don’t subscribe. This plan could turn them into long-term users.  
-
-#### Discounts for Women on Special Days  
-- Offer special discounts on days like International Women’s Day to attract more female subscribers and encourage them to ride.  
-
-- **Problem Solved:** The percentage of female subscribers is lower than female customers. This helps close that gap.  
-
-#### Rewards for Frequent Riders  
-- Provide benefits like free rides or discounts for loyal users.
-
-- **Problem Solved:** Older age groups tend to subscribe more, but there is a big gap in the 36-45 age group. This incentive could encourage more sign-ups.  
-
+#### 4. Discounts for Women on Special Days: Offer subscription discounts on days like International Women’s Day, promoted through targeted digital campaigns.
+- **Problem Solved**: Addresses 7% lower female subscriber proportion.
 
 
 
